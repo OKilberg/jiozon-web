@@ -13,7 +13,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'green-bg':'#0F1A13',
+        'green-text':'#427054',
+        'yellow-gradient':'linear-gradient(180deg, #FCE662 0%, #FCED95 50%, #FCF4C7 100%)',
+      },
+      fontFamily: {
+        'jomhuria': ['"Jomhuria"'],
+      },
     },
+    
   },
   plugins: [],
 }
