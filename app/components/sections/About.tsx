@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Header from '../ui/Header'
 
 type Props = {}
 
@@ -11,7 +12,7 @@ export default function About({ }: Props) {
             </div>
             <div className='md:relative h-full flex flex-col md:justify-center'>
                 <div className='text-white rounded-b-lg md:rounded-lg text-center md:text-left py-6 md:py-12 px-10 md:absolute -left-[100px] h-fit flex flex-col gap-3 md:gap-6 bg-green-text w-full md:w-[400px]'>
-                    <h2 className=' font-bold text-3xl'>About Jiozon</h2>
+                    <Header bold size={2} text='About Jiozon'/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem risus, ultricies vestibulum interdum in, ullamcorper et ex. In nec ante eget dolor accumsan finibus mattis quis ex.
 
                         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae..

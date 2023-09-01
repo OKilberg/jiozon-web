@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../ui/Header'
 
 type VideoListProps = {}
 
@@ -17,8 +18,8 @@ type VideoItemProps = {}
 
 function VideoItem({ }: VideoItemProps) {
     return (
-        <div>
-            <h2 className='font-bold py-2 text-green-text'>VideoItem</h2>
+        <div className='text-green-text'>
+            <Header bold text='Video Item' size={3} py={2}/>
             <div className='aspect-video bg-green-text rounded-lg'>
                 
             </div>

@@ -17,10 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"bg-white "+inter.className}>
-        <Navbar/>
+      <body className={"flex flex-col bg-white " + inter.className}>
+        <Navbar />
         {children}
-        </body>
+        <div className='w-full h-[200px] bg-green-text'>asd</div>
+      </body>
     </html>
   )
 }
