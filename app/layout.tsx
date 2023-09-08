@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={"flex flex-col bg-white " + inter.className}>
         <Navbar />
         {children}
-        <div className='w-full h-[200px] bg-green-text'>asd</div>
+        <footer className='w-full h-[200px] bg-green-text text-white'>asd</footer>
       </body>
     </html>
   )

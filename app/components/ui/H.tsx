@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = { size?: number, text: string, bold?: boolean, py?:number }
 
-export default function Header({ size, text, bold, py }: Props) {
+export default function H({ size, text, bold, py }: Props) {
 
     const hStyle = () => {
         let tw = '';
