@@ -1,13 +1,17 @@
 import React from 'react'
+import {getTwColor} from './colorUtil'
 
-type Props = { size?: number, text: string, bold?: boolean, py?:number }
+type Props = { size?: number, text: string, bold?: boolean, py?:number, color?: {color: string, light: string} }
 
-export default function H({ size, text, bold, py }: Props) {
+export default function H({ size, text, bold, py, color }: Props) {
 
     const hStyle = () => {
         let tw = '';
+        
         if (bold) tw += 'font-bold ';
         if(py) tw += 'py-'+py+' '
+        if(color) tw += 'text-'+getTwColor(color.color, color.light)+' ';
+
         return tw;
     }
 

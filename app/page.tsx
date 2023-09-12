@@ -3,6 +3,7 @@ import ImageContainer from './components/ImageHeader'
 import VideoList from './components/sections/VideoList'
 import About from './components/sections/About'
 import Tour from './components/sections/Tour'
+import Contact from './components/sections/Contact'
 
 export default function Home() {
   return (
@@ -10,10 +11,11 @@ export default function Home() {
       <div className='h-[75vh]'>
         <ImageContainer imageUrl='/forest.png' text='JIOZON' />
       </div>
-      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col gap-10 pt-10'>
         <VideoList />
         <About />
         <Tour/>
+        <Contact/>
       </div>
     </main>
   )

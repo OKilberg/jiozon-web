@@ -1,5 +1,5 @@
 import React from 'react'
-import H from '../ui/H'
+import VideoItem from '../ui/VideoItem'
 
 type VideoListProps = {}
 
@@ -14,15 +14,3 @@ export default function VideoList({ }: VideoListProps) {
     )
 }
 
-type VideoItemProps = {}
-
-function VideoItem({ }: VideoItemProps) {
-    return (
-        <li className='text-green-text'>
-            <H bold text='Video Item' size={2} py={2}/>
-            <div className='aspect-video bg-green-text rounded-lg'>
-                
-            </div>
-        </li>
-    )
-}

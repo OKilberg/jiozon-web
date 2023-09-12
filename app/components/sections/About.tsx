@@ -11,7 +11,7 @@ export default function About({ }: Props) {
                 <Image className='rounded-t-lg md:rounded-none' src={'/space.jpg'} alt='space' fill style={{ objectFit: "cover" }} />
             </figure>
             <div className='md:relative h-full flex flex-col md:justify-center'>
-                <article className='text-white rounded-b-lg md:rounded-lg text-center md:text-left py-6 md:py-12 px-10 md:absolute -left-[100px] h-fit flex flex-col gap-3 md:gap-6 bg-green-text w-full md:w-[400px]'>
+                <article className='text-white rounded-b-lg md:rounded-lg text-center md:text-left py-6 md:py-12 px-10 md:absolute -left-[100px] h-fit flex flex-col gap-3 md:gap-6 bg-green w-full md:w-[400px]'>
                     <Header bold size={2} text='About Jiozon'/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem risus, ultricies vestibulum interdum in, ullamcorper et ex. In nec ante eget dolor accumsan finibus mattis quis ex.
 

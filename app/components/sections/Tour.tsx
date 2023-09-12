@@ -26,7 +26,7 @@ type TourItem = {}
 
 function TourItem({}: TourItem) {
   return (
-    <li className='flex gap-6 justify-start px-6 py-3 bg-green-text rounded-md text-white'>
+    <li className='flex gap-6 justify-start px-6 py-3 bg-green rounded-md text-white'>
         <div className='flex flex-col justify-center items-center font-bold'>
             <div>
                 17
