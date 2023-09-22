@@ -17,10 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"flex flex-col bg-white " + inter.className}>
+      <body className={"flex flex-col bg-gradient2 mb-10 md:mb-0 " + inter.className}>
         <Navbar />
         {children}
-        <footer className='w-full h-[200px] bg-green text-white'>asd</footer>
+        <footer className='w-full h-[200px] text-white bg-green-dark'>
+          <div className='flex items-end w-full h-full pb-10 px-12'>
+            <h1 className='opacity-70'>Website by frontoship</h1>
+          </div>
+        </footer>
       </body>
     </html>
   )
