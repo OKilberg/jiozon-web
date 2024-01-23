@@ -20,6 +20,15 @@ const config: Config = {
         'libre-baskerville': ["Libre Baskerville", "sans-serif"],
         'reem-kufi': ["Reem Kufi Fun", "sans-serif"]
       },
+      colors: {
+        'orange-tint':'#FCCAAD',
+        'orange-doorhinge':'#FA9F3A',
+        'red-juicy':'#EE3859',
+        'red-pomegranate':'#F63056'
+      },
+      height: {
+        'screen-3/4':'calc(75vh)'
+      }
     },
   },
   plugins: [],
