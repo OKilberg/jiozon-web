@@ -21,28 +21,37 @@ export default function NavItem({ children, href, label, selectedColor, hoverCol
         checkInView(el) ? setInView(true) : setInView(false)
     }
 
+    useEffect(()=>{
+        const documentEl = document?.getElementById(href.replace('#', ''))
+        checkInView(documentEl) ? setInView(true):setInView(false)
+    },[])
+
     useEffect(() => {
         // get target id element
-        const documentEl = document?.getElementById(href.replace('/#', ''))
+        const documentEl = document?.getElementById(href.replace('#', ''))
         // add on scroll event
         window.addEventListener("scroll", () => handleScroll(documentEl));
         return () => window.removeEventListener("scroll", () => handleScroll(documentEl));
-        console.log('Something happened')
-        //depend on path and the function
+        // depend on path and the function
     }, [path, handleScroll])
 
     const checkInView = (el: any | undefined) => {
         if (!el) return false;
         const { top, left, bottom, right } = el.getBoundingClientRect()
         const { innerHeight, innerWidth } = window;
-        
+        console.log(el.id, top, bottom)
         return (
-            top>-1 && bottom <= (innerHeight / 2)
-        );
+            isAboveWPMiddle(innerHeight, top, bottom)
+        )
     }
 
-    console.log(path, href)
-    //const itemColor = (path === href ? selectedColor : 'text-white');
+    const isAboveWPMiddle=(innerHeight: number, top: number, bottom: number)=>{
+        return (
+            top < (innerHeight/2) && top > -(innerHeight/2)
+            ||
+            bottom < innerHeight && bottom >= (innerHeight/2)
+        )
+    }
     const itemColor = (inView ? selectedColor : 'text-white');
     const style = [itemColor, hoverColor].join(' ')
 

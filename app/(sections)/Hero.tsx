@@ -10,7 +10,7 @@ type Props = {}
 
 export default function Hero({ }: Props) {
   return (
-    <section className='w-full min-h-screen text-white'>
+    <section id='home' className='w-full min-h-screen h-fit text-white'>
       <ImageBackground imageUrl='/HeroBG.png' className='h-screen' containerClassName='w-screen'>
         <BentoGrid cols={4} mdCols={12} lgCols={12} className='w-screen gap-0' >
 
@@ -36,34 +36,6 @@ export default function Hero({ }: Props) {
 
         </BentoGrid>
       </ImageBackground>
-      {
-        /*
-        <BackgroundImage className='min-h-screen' imageUrl='/HeroBG.png'>
-        
-        <Grid cols={12} className='min-h-screen'>
-          <GridItem start={3} span={3} className='min-h-screen'>
-              <div className='flex flex-col justify-center min-h-screen '>
-                <TextDisplay text='Jiozon'/>
-                <i></i>
-                <TextHeading text='How About This'/>
-                <ButtonCTA text={'Click Here Now!'}/>
-                <TextSubheading text='Small Text'/>
-                <TextBody text='Small Text'/>
-                <p className='font-libre-baskerville'>Hello</p>
-            </div>
-          </GridItem>
-          <GridItem start={8} span={3}>
-          <div className='flex flex-col justify-center h-4/5 '>
-            <article className=''>
-              asdasd
-            </article>
-            </div>
-          </GridItem>
-        </Grid>
-      </BackgroundImage>
-        */
-      }
-
     </section>
   )
 }

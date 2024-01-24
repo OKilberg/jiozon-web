@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={inter.className}>
-        <header id='home' className='hidden md:flex fixed top-3 z-20 w-full justify-center'>
+        <header className='hidden md:flex fixed top-3 z-20 w-full justify-center'>
           <nav className='flex gap-6 px-5 py-2 w-fit bg-orange-tint bg-opacity-20 backdrop-blur-lg rounded-full'>
-            <NavItem label='Home' href={'/#home'} selectedColor='text-red-juicy' hoverColor='hover:text-red-juicy'></NavItem>
-            <NavItem label='About' href={'/#about'} selectedColor='text-red-juicy' hoverColor='hover:text-red-juicy'></NavItem>
-            <NavItem label='Contact' href={'/#contact'} selectedColor='text-red-juicy' hoverColor='hover:text-red-juicy'></NavItem>
+            <NavItem label='Home' href={'#home'} selectedColor='text-red-juicy outline-1 outline-white' hoverColor='hover:text-red-juicy'></NavItem>
+            <NavItem label='About' href={'#about'} selectedColor='text-red-juicy outline-1 outline-white' hoverColor='hover:text-red-juicy'></NavItem>
+            <NavItem label='Contact' href={'#contact'} selectedColor='text-red-juicy outline-1 outline-white' hoverColor='hover:text-red-juicy'></NavItem>
           </nav>
         </header>
         {children}
