@@ -12,15 +12,15 @@ export default function Hero({ }: Props) {
       <ImageBackground priority imageUrl='/HeroBG.png' className='' containerClassName=''>
         <BentoGrid cols={4} mdCols={12} lgCols={12} className='w-screen z-20' >
 
-          <BentoItem colSpan={4} mdColSpan={3} lgColSpan={3} className='z-0 h-screen md:col-start-3 lg:col-start-3'>
+          <BentoItem colSpan={4} mdColSpan={3} lgColSpan={3} className='z-0 h-screen-3/4 md:h-screen md:col-start-3 lg:col-start-3'>
             <div className='flex flex-col justify-center items-center h-full'>
-              <TextDisplay text='Jiozon' />
+              <TextDisplay text='Jiozon'/>
               <TextHeading text='How About This' />
               <ButtonCTA text={'Click Here Now!'} />
             </div>
           </BentoItem>
 
-          <BentoItem colSpan={4} mdColSpan={3} lgColSpan={3} className='h-screen md:col-start-8 lg:col-start-8'>
+          <BentoItem colSpan={4} mdColSpan={3} lgColSpan={3} className='h-screen-3/4 md:h-screen md:col-start-8 lg:col-start-8'>
             <div className='flex flex-col justify-center items-center h-full'>
               <article className='flex flex-col justify-center items-center bg-black backdrop-blur-lg bg-opacity-50 h-2/3 w-full rounded-3xl'>
                 <TextSubheading text='Small Text' />
