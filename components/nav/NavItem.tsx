@@ -27,19 +27,15 @@ export default function NavItem({ children, href, label, selectedColor, hoverCol
     },[])
 
     useEffect(() => {
-        // get target id element
         const documentEl = document?.getElementById(href.replace('#', ''))
-        // add on scroll event
         window.addEventListener("scroll", () => handleScroll(documentEl));
         return () => window.removeEventListener("scroll", () => handleScroll(documentEl));
-        // depend on path and the function
     }, [path, handleScroll])
 
     const checkInView = (el: any | undefined) => {
         if (!el) return false;
         const { top, left, bottom, right } = el.getBoundingClientRect()
         const { innerHeight, innerWidth } = window;
-        console.log(el.id, top, bottom)
         return (
             isAboveWPMiddle(innerHeight, top, bottom)
         )

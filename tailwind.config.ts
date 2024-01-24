@@ -7,7 +7,6 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -27,7 +26,11 @@ const config: Config = {
         'red-pomegranate':'#F63056'
       },
       height: {
-        'screen-3/4':'calc(75vh)'
+        'screen-3/4':'calc(75vh)',
+        'screen-1/2':'calc(50vh)'
+      },
+      dropShadow: {
+        'stroke':'0 1px 1px rgba(255, 255, 255, 1.0)',
       }
     },
   },
