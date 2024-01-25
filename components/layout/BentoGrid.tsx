@@ -39,7 +39,7 @@ type ItemProps = {
 
 export function BentoItem({ colSpan, mdColSpan, lgColSpan, rowSpan, colStart, rowStart, children, className }: ItemProps) {
   return (
-    <div className={`${useColSpan(colSpan, mdColSpan, lgColSpan)} ${useRowSpan(rowSpan)} ${useColStart(colStart)} ${useRowStart(rowStart)} ${className} rounded-5xl overflow-hidden`}>
+    <div className={`${useColSpan(colSpan, mdColSpan, lgColSpan)} ${useRowSpan(rowSpan)} ${useColStart(colStart)} ${useRowStart(rowStart)} ${className} `}>
       {children}
     </div>
   )
