@@ -27,7 +27,7 @@ export default function Hero({ }: Props) {
               <article className='flex flex-col justify-center items-center h-2/3 w-full rounded-3xl'>
                 <SpotifyEmbedd
                   className='w-full'
-                  link='https://open.spotify.com/track/2ZZjAZLVSnHJnSNFN5AUCd?si=80e3544b163740df'
+                  link='https://open.spotify.com/track/1HiEUaxL4kDCk2PoQCaKf1?si=05bbf9596da2434f'
                 />
               </article>
             </div>
